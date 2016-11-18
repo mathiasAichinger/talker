@@ -37,10 +37,10 @@ class TalkTableViewCell: UITableViewCell {
     }
     
     func configure(talk: Talk) {
-        self.speakerImageView.image = UIImage(contentsOfFile: talk.speakerImageURL.absoluteString)
+        self.speakerImageView.image = UIImage(contentsOfFile: talk.speakerImageURL)
         self.titleLabel.text = talk.title
         self.speakerLabel.text = talk.speaker
-        self.dateLabel.text = dateFormatter.string(from:talk.date)
+        self.dateLabel.text = dateFormatter.string(from:Date(timeIntervalSince1970:talk.dateTimestamp))
     }
     
     private func initializeUI() {

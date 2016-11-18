@@ -20,13 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.tintColor = UIColor(red:1.00, green:0.38, blue:0.22, alpha:1.00)
         
-        let imagePath: String = Bundle.main.path(forResource: "profile_small", ofType: "png")!
+        startMockingNetwork()
         
-        let talk = Talk(title: "Server-Side Swift", speaker: "Mathias Aichinger", speakerImageURL: URL(string:imagePath)!, rating: 5, githubUrl: URL(string:"http://github.com")!, date: Date())
-        let talk2 = Talk(title: "Swift 3.0 naming", speaker: "Wolfgang Damm", speakerImageURL: URL(string:Bundle.main.path(forResource: "wolfgang_damm", ofType: "png")!)!, rating: 5, githubUrl: URL(string:"http://github.com")!, date: Date())
         
         let tabBarViewController = UITabBarController()
-        let navigationController = UINavigationController(rootViewController: TalkListViewController(viewModel: TalkListViewModel(talks: [talk, talk2])))
+        let navigationController = UINavigationController(rootViewController: TalkListViewController(viewModel: TalkListViewModel(talks: [])))
         tabBarViewController.viewControllers = [navigationController]
         
         window?.rootViewController = tabBarViewController

@@ -10,7 +10,15 @@ import UIKit
 
 class TalkListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    var viewModel: TalkListViewModel
+    let networkManager: NetworkManager = NetworkManager()
+    
+    var viewModel: TalkListViewModel {
+        didSet {
+            if isViewLoaded {
+                self.tableView.reloadData()
+            }
+        }
+    }
     
     let tableView: UITableView = UITableView()
     
@@ -28,6 +36,12 @@ class TalkListViewController: UIViewController, UITableViewDataSource, UITableVi
         initializeUI()
         layoutUI()
         styleUI()
+        
+        networkManager.talksDidChange.add { [weak self] (talks) in
+            self?.viewModel = TalkListViewModel(talks: talks)
+        }
+        
+        networkManager.requestTalks()
     }
 
     

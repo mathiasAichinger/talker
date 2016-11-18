@@ -6,23 +6,36 @@
 //  Copyright © 2016 Easysolutions. All rights reserved.
 //
 import Foundation
+import SwiftyJSON
 
-struct Talk {
+class Talk: NSObject, JSONInitializable {
 
+    let id: String
     let title: String
-    let speakerImageURL: URL
+    let speakerImageURL: String
     let speaker: String
-    let rating: Int8
-    let githubUrl: URL
-    let date: Date
+    let rating: Int
+    let githubUrl: String
+    let dateTimestamp: Double
     
     
-    init(title: String, speaker: String, speakerImageURL: URL, rating: Int8, githubUrl: URL, date: Date) {
+    init(id: String, title: String, speaker: String, speakerImageURL: String, rating: Int, githubUrl: String, dateTimestamp: Double) {
+        self.id = id
         self.title = title
         self.speaker = speaker
         self.speakerImageURL = speakerImageURL
         self.rating = rating
         self.githubUrl = githubUrl
-        self.date = date
+        self.dateTimestamp = dateTimestamp
+    }
+    
+    required init(json: JSON) {
+        id = json["id"].stringValue
+        title = json["title"].stringValue
+        speakerImageURL = json["speakerImageURL"].stringValue
+        speaker = json["speaker"].stringValue
+        rating = json["speaker"].intValue
+        githubUrl = json["githubUrl"].stringValue
+        dateTimestamp = json["dateTimestamp"].doubleValue
     }
 }
