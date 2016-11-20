@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 import Haneke
+import TalkerFramework
 
 class TalkTableViewCell: UITableViewCell {
     

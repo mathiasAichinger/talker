@@ -10,6 +10,7 @@ import UIKit
 import Alamofire
 import SwiftyJSON
 import Kakapo
+import TalkerFramework
 
 class NetworkManager {
     

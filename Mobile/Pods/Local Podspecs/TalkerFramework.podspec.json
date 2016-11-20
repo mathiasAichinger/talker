@@ -1,0 +1,19 @@
+{
+  "name": "TalkerFramework",
+  "version": "0.1.0",
+  "summary": "The framework for the talker project",
+  "description": "The framework for the talker project",
+  "homepage": "https://github.com/mathiasAichinger/talker-framework",
+  "license": "MIT",
+  "authors": {
+    "Mathias Aichinger": "mathias@netcon.at"
+  },
+  "source": {
+    "git": "https://github.com/mathiasAichinger/talker-framework.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Sources/**/*"
+}

@@ -7,6 +7,7 @@
 //
 import Foundation
 import SwiftyJSON
+import TalkerFramework
 
 class ClientTalk: Talk, JSONInitializable {
     

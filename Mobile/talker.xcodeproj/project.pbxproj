@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		219040FA1DE1EF6F004A5E4E /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219040F91DE1EF6F004A5E4E /* Talk.swift */; };
 		21D78E541DDF9EBD00B8ABDB /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E531DDF9EBD00B8ABDB /* NetworkMock.swift */; };
 		21D78E571DDF9F6300B8ABDB /* Talk+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E561DDF9F6300B8ABDB /* Talk+Mock.swift */; };
 		21D78E591DDFA1F600B8ABDB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E581DDFA1F600B8ABDB /* NetworkManager.swift */; };
@@ -26,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		219040F91DE1EF6F004A5E4E /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
 		21D78E531DDF9EBD00B8ABDB /* NetworkMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
 		21D78E561DDF9F6300B8ABDB /* Talk+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talk+Mock.swift"; sourceTree = "<group>"; };
 		21D78E581DDFA1F600B8ABDB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 		21EEE5421DDF846200A2A34C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				219040F91DE1EF6F004A5E4E /* Talk.swift */,
 				21EEE5431DDF84B800A2A34C /* ClientTalk.swift */,
 				21D78E5C1DDFA31700B8ABDB /* ModelUtils.swift */,
 			);
@@ -279,7 +276,6 @@
 				21D78E571DDF9F6300B8ABDB /* Talk+Mock.swift in Sources */,
 				21D78E5D1DDFA31700B8ABDB /* ModelUtils.swift in Sources */,
 				21EEE5441DDF84B800A2A34C /* ClientTalk.swift in Sources */,
-				219040FA1DE1EF6F004A5E4E /* Talk.swift in Sources */,
 				21EEE54C1DDF865C00A2A34C /* TalkTableViewCell.swift in Sources */,
 				21D78E541DDF9EBD00B8ABDB /* NetworkMock.swift in Sources */,
 				21D78E591DDFA1F600B8ABDB /* NetworkManager.swift in Sources */,
@@ -402,7 +398,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K4JGJ48S6A;
 				INFOPLIST_FILE = talker/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.easysolutions.talker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -416,7 +411,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = K4JGJ48S6A;
 				INFOPLIST_FILE = talker/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.easysolutions.talker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

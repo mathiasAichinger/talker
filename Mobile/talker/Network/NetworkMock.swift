@@ -9,6 +9,7 @@
 import Foundation
 import Kakapo
 import SwiftyJSON
+import TalkerFramework
 
 let router = Router.register("http://localhost:8080/")
 

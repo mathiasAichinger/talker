@@ -1,0 +1,6 @@
+framework module TalkerFramework {
+  umbrella header "TalkerFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
