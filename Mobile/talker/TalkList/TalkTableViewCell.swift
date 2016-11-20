@@ -8,10 +8,10 @@
 
 import UIKit
 import SnapKit
+import Haneke
 
 class TalkTableViewCell: UITableViewCell {
     
-
     let speakerImageView: UIImageView = UIImageView()
     let titleLabel: UILabel = UILabel()
     let speakerLabel: UILabel = UILabel()
@@ -37,10 +37,11 @@ class TalkTableViewCell: UITableViewCell {
     }
     
     func configure(talk: Talk) {
-        self.speakerImageView.image = UIImage(contentsOfFile: talk.speakerImageURL)
         self.titleLabel.text = talk.title
         self.speakerLabel.text = talk.speaker
         self.dateLabel.text = dateFormatter.string(from:Date(timeIntervalSince1970:talk.dateTimestamp))
+        layoutIfNeeded()
+        self.speakerImageView.hnk_setImage(from: URL(string:talk.speakerImageURL!))
     }
     
     private func initializeUI() {

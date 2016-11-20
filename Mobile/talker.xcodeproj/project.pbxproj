@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219040FA1DE1EF6F004A5E4E /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219040F91DE1EF6F004A5E4E /* Talk.swift */; };
 		21D78E541DDF9EBD00B8ABDB /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E531DDF9EBD00B8ABDB /* NetworkMock.swift */; };
 		21D78E571DDF9F6300B8ABDB /* Talk+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E561DDF9F6300B8ABDB /* Talk+Mock.swift */; };
 		21D78E591DDFA1F600B8ABDB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E581DDFA1F600B8ABDB /* NetworkManager.swift */; };
@@ -15,7 +16,7 @@
 		21EEE3851DDF7BC500A2A34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE3841DDF7BC500A2A34C /* AppDelegate.swift */; };
 		21EEE38E1DDF7BC500A2A34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EEE38D1DDF7BC500A2A34C /* Assets.xcassets */; };
 		21EEE3911DDF7BC500A2A34C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EEE38F1DDF7BC500A2A34C /* LaunchScreen.storyboard */; };
-		21EEE5441DDF84B800A2A34C /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5431DDF84B800A2A34C /* Talk.swift */; };
+		21EEE5441DDF84B800A2A34C /* ClientTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5431DDF84B800A2A34C /* ClientTalk.swift */; };
 		21EEE5481DDF85E700A2A34C /* TalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5471DDF85E700A2A34C /* TalkListViewController.swift */; };
 		21EEE54A1DDF85FB00A2A34C /* TalkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5491DDF85FB00A2A34C /* TalkListViewModel.swift */; };
 		21EEE54C1DDF865C00A2A34C /* TalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE54B1DDF865C00A2A34C /* TalkTableViewCell.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		219040F91DE1EF6F004A5E4E /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
 		21D78E531DDF9EBD00B8ABDB /* NetworkMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
 		21D78E561DDF9F6300B8ABDB /* Talk+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talk+Mock.swift"; sourceTree = "<group>"; };
 		21D78E581DDFA1F600B8ABDB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -35,7 +37,7 @@
 		21EEE38D1DDF7BC500A2A34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21EEE3901DDF7BC500A2A34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21EEE3921DDF7BC500A2A34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21EEE5431DDF84B800A2A34C /* Talk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		21EEE5431DDF84B800A2A34C /* ClientTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTalk.swift; sourceTree = "<group>"; };
 		21EEE5471DDF85E700A2A34C /* TalkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewController.swift; sourceTree = "<group>"; };
 		21EEE5491DDF85FB00A2A34C /* TalkListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewModel.swift; sourceTree = "<group>"; };
 		21EEE54B1DDF865C00A2A34C /* TalkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkTableViewCell.swift; sourceTree = "<group>"; };
@@ -113,7 +115,8 @@
 		21EEE5421DDF846200A2A34C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				21EEE5431DDF84B800A2A34C /* Talk.swift */,
+				219040F91DE1EF6F004A5E4E /* Talk.swift */,
+				21EEE5431DDF84B800A2A34C /* ClientTalk.swift */,
 				21D78E5C1DDFA31700B8ABDB /* ModelUtils.swift */,
 			);
 			path = Models;
@@ -275,7 +278,8 @@
 			files = (
 				21D78E571DDF9F6300B8ABDB /* Talk+Mock.swift in Sources */,
 				21D78E5D1DDFA31700B8ABDB /* ModelUtils.swift in Sources */,
-				21EEE5441DDF84B800A2A34C /* Talk.swift in Sources */,
+				21EEE5441DDF84B800A2A34C /* ClientTalk.swift in Sources */,
+				219040FA1DE1EF6F004A5E4E /* Talk.swift in Sources */,
 				21EEE54C1DDF865C00A2A34C /* TalkTableViewCell.swift in Sources */,
 				21D78E541DDF9EBD00B8ABDB /* NetworkMock.swift in Sources */,
 				21D78E591DDFA1F600B8ABDB /* NetworkManager.swift in Sources */,

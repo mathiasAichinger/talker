@@ -14,13 +14,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.tintColor = UIColor(red:1.00, green:0.38, blue:0.22, alpha:1.00)
         
-        startMockingNetwork()
+        //startMockingNetwork()
         
         
         let tabBarViewController = UITabBarController()

@@ -32,11 +32,11 @@ class NetworkManager {
     
     
     func requestTalks() {
-        manager.request("https://talkerserver.com/api/talks", method: .get).responseJSON { [weak self] (response) in
+        manager.request("http://localhost:8080/talks", method: .get).responseJSON { [weak self] (response) in
             guard let data = response.data else { return }
             let json = JSON(data: data)
             self?.talks = json.arrayValue.map { (talk) -> Talk in
-                return Talk(json: talk)
+                return ClientTalk(json: talk)
             }
         }
     }
