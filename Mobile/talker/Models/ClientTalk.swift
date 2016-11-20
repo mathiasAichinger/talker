@@ -16,7 +16,7 @@ class ClientTalk: Talk, JSONInitializable {
         let title = json["title"].stringValue
         let speakerImageURL = json["speakerImageURL"].stringValue
         let speaker = json["speaker"].stringValue
-        let rating = json["speaker"].intValue
+        let rating = json["rating"].intValue
         let githubUrl = json["githubUrl"].stringValue
         let dateTimestamp = json["dateTimestamp"].doubleValue
         super.init(globalId: globalId, title: title, speaker: speaker, speakerImageURL: speakerImageURL, rating: rating, githubUrl: githubUrl, dateTimestamp: dateTimestamp)

@@ -83,5 +83,11 @@ class TalkListViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     // MARK: UITableViewDelegate
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        let detailViewController = TalkDetailViewController(viewModel: TalkDetaiViewModel(talk: viewModel.talks[indexPath.row]))
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
 
 }

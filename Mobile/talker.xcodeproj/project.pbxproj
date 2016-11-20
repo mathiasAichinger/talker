@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		219047761DE21D50004A5E4E /* TalkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219047751DE21D50004A5E4E /* TalkDetailViewController.swift */; };
+		219047781DE21D91004A5E4E /* TalkDetaiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219047771DE21D91004A5E4E /* TalkDetaiViewModel.swift */; };
+		2190477A1DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219047791DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift */; };
+		2190477C1DE220B5004A5E4E /* TalkDetailDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2190477B1DE220B5004A5E4E /* TalkDetailDescriptionTableViewCell.swift */; };
+		2190477F1DE22D80004A5E4E /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2190477E1DE22D80004A5E4E /* FeedbackViewController.swift */; };
 		21D78E541DDF9EBD00B8ABDB /* NetworkMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E531DDF9EBD00B8ABDB /* NetworkMock.swift */; };
 		21D78E571DDF9F6300B8ABDB /* Talk+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E561DDF9F6300B8ABDB /* Talk+Mock.swift */; };
 		21D78E591DDFA1F600B8ABDB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D78E581DDFA1F600B8ABDB /* NetworkManager.swift */; };
@@ -25,6 +30,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		219047751DE21D50004A5E4E /* TalkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetailViewController.swift; sourceTree = "<group>"; };
+		219047771DE21D91004A5E4E /* TalkDetaiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetaiViewModel.swift; sourceTree = "<group>"; };
+		219047791DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
+		2190477B1DE220B5004A5E4E /* TalkDetailDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetailDescriptionTableViewCell.swift; sourceTree = "<group>"; };
+		2190477E1DE22D80004A5E4E /* FeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		21D78E531DDF9EBD00B8ABDB /* NetworkMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkMock.swift; sourceTree = "<group>"; };
 		21D78E561DDF9F6300B8ABDB /* Talk+Mock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talk+Mock.swift"; sourceTree = "<group>"; };
 		21D78E581DDFA1F600B8ABDB /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
@@ -58,6 +68,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219047741DE21D18004A5E4E /* TalkDetail */ = {
+			isa = PBXGroup;
+			children = (
+				219047751DE21D50004A5E4E /* TalkDetailViewController.swift */,
+				219047771DE21D91004A5E4E /* TalkDetaiViewModel.swift */,
+				219047791DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift */,
+				2190477B1DE220B5004A5E4E /* TalkDetailDescriptionTableViewCell.swift */,
+			);
+			path = TalkDetail;
+			sourceTree = "<group>";
+		};
+		2190477D1DE22D5B004A5E4E /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				2190477E1DE22D80004A5E4E /* FeedbackViewController.swift */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
 		21D78E521DDF9DEC00B8ABDB /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +126,8 @@
 		21EEE3831DDF7BC500A2A34C /* Talker */ = {
 			isa = PBXGroup;
 			children = (
+				2190477D1DE22D5B004A5E4E /* Feedback */,
+				219047741DE21D18004A5E4E /* TalkDetail */,
 				21D78E551DDF9F4300B8ABDB /* ClientModels */,
 				21D78E521DDF9DEC00B8ABDB /* Network */,
 				21EEE5461DDF85D800A2A34C /* TalkList */,
@@ -275,13 +306,18 @@
 			files = (
 				21D78E571DDF9F6300B8ABDB /* Talk+Mock.swift in Sources */,
 				21D78E5D1DDFA31700B8ABDB /* ModelUtils.swift in Sources */,
+				219047781DE21D91004A5E4E /* TalkDetaiViewModel.swift in Sources */,
 				21EEE5441DDF84B800A2A34C /* ClientTalk.swift in Sources */,
 				21EEE54C1DDF865C00A2A34C /* TalkTableViewCell.swift in Sources */,
+				219047761DE21D50004A5E4E /* TalkDetailViewController.swift in Sources */,
 				21D78E541DDF9EBD00B8ABDB /* NetworkMock.swift in Sources */,
 				21D78E591DDFA1F600B8ABDB /* NetworkManager.swift in Sources */,
 				21EEE5481DDF85E700A2A34C /* TalkListViewController.swift in Sources */,
 				21D78E5B1DDFA27500B8ABDB /* ObserverSet.swift in Sources */,
+				2190477A1DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift in Sources */,
+				2190477C1DE220B5004A5E4E /* TalkDetailDescriptionTableViewCell.swift in Sources */,
 				21EEE3851DDF7BC500A2A34C /* AppDelegate.swift in Sources */,
+				2190477F1DE22D80004A5E4E /* FeedbackViewController.swift in Sources */,
 				21EEE54A1DDF85FB00A2A34C /* TalkListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

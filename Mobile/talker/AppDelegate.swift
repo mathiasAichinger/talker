@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         window?.tintColor = UIColor(red:1.00, green:0.38, blue:0.22, alpha:1.00)
         
-        //startMockingNetwork()
+        startMockingNetwork()
         
         
         let tabBarViewController = UITabBarController()
