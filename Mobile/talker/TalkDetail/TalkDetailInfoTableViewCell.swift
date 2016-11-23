@@ -40,12 +40,12 @@ class TalkDetailInfoTableViewCell: UITableViewCell {
     
     func configure(talk: Talk) {
         titleLabel.text = talk.title
-        speakerLabel.text = talk.speaker
+        speakerLabel.text = talk.loadedSpeaker?.speakerName
         dateLabel.text = dateFormatter.string(from:Date(timeIntervalSince1970:talk.dateTimestamp))
-        ratingView.value = CGFloat(talk.rating)
+        //ratingView.value = CGFloat(talk)
         
         layoutIfNeeded()
-        self.speakerImageView.hnk_setImage(from: URL(string:talk.speakerImageURL!))
+        self.speakerImageView.hnk_setImage(from: URL(string:talk.loadedSpeaker!.speakerImageURL!))
     }
     
     private func initializeUI() {

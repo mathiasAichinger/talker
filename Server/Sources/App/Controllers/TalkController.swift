@@ -8,42 +8,41 @@
 
 import Vapor
 import HTTP
+import TalkerFramework
 
 final class TalkController: ResourceRepresentable {
     func index(request: Request) throws -> ResponseRepresentable {
-        return try ServerTalk.all().makeNode().converted(to: JSON.self)
+        return try Talk.all().makeNode().converted(to: JSON.self)
     }
     
     func create(request: Request) throws -> ResponseRepresentable {
         var talk = try request.talk()
+        
+        
         try talk.save()
         return talk
     }
     
-    func show(request: Request, talk: ServerTalk) throws -> ResponseRepresentable {
+    func show(request: Request, talk: Talk) throws -> ResponseRepresentable {
         return talk
     }
     
-    func delete(request: Request, talk: ServerTalk) throws -> ResponseRepresentable {
+    func delete(request: Request, talk: Talk) throws -> ResponseRepresentable {
         try talk.delete()
         return JSON([:])
     }
     
     func clear(request: Request) throws -> ResponseRepresentable {
-        try ServerTalk.query().delete()
+        try Talk.query().delete()
         return JSON([])
     }
     
-    func update(request: Request, talk: ServerTalk) throws -> ResponseRepresentable {
+    func update(request: Request, talk: Talk) throws -> ResponseRepresentable {
         let new = try request.talk()
         var talk = talk
         talk.title = new.title
-        talk.speaker = new.speaker
-        talk.rating = new.rating
         talk.dateTimestamp = new.dateTimestamp
-        if let speakerImageURL = new.speakerImageURL {
-          talk.speakerImageURL = speakerImageURL
-        }
+        talk.speakerId = new.speakerId
         
         if let githubUrl = new.githubUrl {
             talk.githubUrl = githubUrl
@@ -53,12 +52,12 @@ final class TalkController: ResourceRepresentable {
         return talk
     }
     
-    func replace(request: Request, talk: ServerTalk) throws -> ResponseRepresentable {
+    func replace(request: Request, talk: Talk) throws -> ResponseRepresentable {
         try talk.delete()
         return try create(request: request)
     }
     
-    func makeResource() -> Resource<ServerTalk> {
+    func makeResource() -> Resource<Talk> {
         return Resource(
             index: index,
             store: create,
@@ -72,9 +71,9 @@ final class TalkController: ResourceRepresentable {
 }
 
 extension Request {
-    func talk() throws -> ServerTalk {
+    func talk() throws -> Talk {
         guard let json = json else { throw Abort.badRequest }
-        return try ServerTalk(node: json)
+        return try Talk(node: json)
     }
 }
 

@@ -700,7 +700,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3925"
+               BlueprintIdentifier = "OBJ_3927"
                BuildableName = "App"
                BlueprintName = "App"
                ReferencedContainer = "container:talker-server.xcodeproj">

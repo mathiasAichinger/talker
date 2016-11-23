@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21604E7B1DE50F2F007D93F3 /* Speaker+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21604E7A1DE50F2F007D93F3 /* Speaker+JSON.swift */; };
 		219047761DE21D50004A5E4E /* TalkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219047751DE21D50004A5E4E /* TalkDetailViewController.swift */; };
 		219047781DE21D91004A5E4E /* TalkDetaiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219047771DE21D91004A5E4E /* TalkDetaiViewModel.swift */; };
 		2190477A1DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219047791DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift */; };
@@ -20,7 +21,7 @@
 		21EEE3851DDF7BC500A2A34C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE3841DDF7BC500A2A34C /* AppDelegate.swift */; };
 		21EEE38E1DDF7BC500A2A34C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21EEE38D1DDF7BC500A2A34C /* Assets.xcassets */; };
 		21EEE3911DDF7BC500A2A34C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21EEE38F1DDF7BC500A2A34C /* LaunchScreen.storyboard */; };
-		21EEE5441DDF84B800A2A34C /* ClientTalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5431DDF84B800A2A34C /* ClientTalk.swift */; };
+		21EEE5441DDF84B800A2A34C /* Talk+JSONInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5431DDF84B800A2A34C /* Talk+JSONInitializable.swift */; };
 		21EEE5481DDF85E700A2A34C /* TalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5471DDF85E700A2A34C /* TalkListViewController.swift */; };
 		21EEE54A1DDF85FB00A2A34C /* TalkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5491DDF85FB00A2A34C /* TalkListViewModel.swift */; };
 		21EEE54C1DDF865C00A2A34C /* TalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE54B1DDF865C00A2A34C /* TalkTableViewCell.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21604E7A1DE50F2F007D93F3 /* Speaker+JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Speaker+JSON.swift"; sourceTree = "<group>"; };
 		219047751DE21D50004A5E4E /* TalkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetailViewController.swift; sourceTree = "<group>"; };
 		219047771DE21D91004A5E4E /* TalkDetaiViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetaiViewModel.swift; sourceTree = "<group>"; };
 		219047791DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -45,7 +47,7 @@
 		21EEE38D1DDF7BC500A2A34C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21EEE3901DDF7BC500A2A34C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		21EEE3921DDF7BC500A2A34C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21EEE5431DDF84B800A2A34C /* ClientTalk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientTalk.swift; sourceTree = "<group>"; };
+		21EEE5431DDF84B800A2A34C /* Talk+JSONInitializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Talk+JSONInitializable.swift"; sourceTree = "<group>"; };
 		21EEE5471DDF85E700A2A34C /* TalkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewController.swift; sourceTree = "<group>"; };
 		21EEE5491DDF85FB00A2A34C /* TalkListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewModel.swift; sourceTree = "<group>"; };
 		21EEE54B1DDF865C00A2A34C /* TalkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkTableViewCell.swift; sourceTree = "<group>"; };
@@ -144,8 +146,9 @@
 		21EEE5421DDF846200A2A34C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				21EEE5431DDF84B800A2A34C /* ClientTalk.swift */,
+				21EEE5431DDF84B800A2A34C /* Talk+JSONInitializable.swift */,
 				21D78E5C1DDFA31700B8ABDB /* ModelUtils.swift */,
+				21604E7A1DE50F2F007D93F3 /* Speaker+JSON.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,7 +310,7 @@
 				21D78E571DDF9F6300B8ABDB /* Talk+Mock.swift in Sources */,
 				21D78E5D1DDFA31700B8ABDB /* ModelUtils.swift in Sources */,
 				219047781DE21D91004A5E4E /* TalkDetaiViewModel.swift in Sources */,
-				21EEE5441DDF84B800A2A34C /* ClientTalk.swift in Sources */,
+				21EEE5441DDF84B800A2A34C /* Talk+JSONInitializable.swift in Sources */,
 				21EEE54C1DDF865C00A2A34C /* TalkTableViewCell.swift in Sources */,
 				219047761DE21D50004A5E4E /* TalkDetailViewController.swift in Sources */,
 				21D78E541DDF9EBD00B8ABDB /* NetworkMock.swift in Sources */,
@@ -317,6 +320,7 @@
 				2190477A1DE21DE8004A5E4E /* TalkDetailInfoTableViewCell.swift in Sources */,
 				2190477C1DE220B5004A5E4E /* TalkDetailDescriptionTableViewCell.swift in Sources */,
 				21EEE3851DDF7BC500A2A34C /* AppDelegate.swift in Sources */,
+				21604E7B1DE50F2F007D93F3 /* Speaker+JSON.swift in Sources */,
 				2190477F1DE22D80004A5E4E /* FeedbackViewController.swift in Sources */,
 				21EEE54A1DDF85FB00A2A34C /* TalkListViewModel.swift in Sources */,
 			);
