@@ -18,7 +18,7 @@ struct TalkDetaiViewModel {
     }
     
     var descriptionText: String {
-            return "Wolfgang Damm (Fretello) will be looking into how we are supposed to name things now and why this is a good thing."
+            return talk.descriptionText
 
     }
     

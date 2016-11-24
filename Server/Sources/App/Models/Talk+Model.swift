@@ -24,20 +24,23 @@ extension Talk: Model {
         }
     }
     
-    
     public init(node: Node, in context: Context) throws {
-        serverId = try node.extract("serverId")
+        serverId = try node.extract("id")
         title = try node.extract("title")
-
+        descriptionText = try node.extract("descriptionText")
+        averageRating = try node.extract("averageRating")
         githubUrl = try node.extract("githubUrl")
         dateTimestamp = try node.extract("dateTimestamp")
         speakerId = try node.extract("speakerId")
+        loadedSpeaker = nil
     }
     
     public func makeNode(context: Context) throws -> Node {
         return try Node(node: [
-            "serverId": serverId,
+            "serverId": serverId ?? id?.string,
             "title": title,
+            "descriptionText": descriptionText,
+            "averageRating": averageRating,
             "githubUrl": githubUrl,
             "dateTimestamp": dateTimestamp,
             "speakerId": speakerId

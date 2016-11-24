@@ -8,19 +8,43 @@
 
 import UIKit
 import HCSStarRatingView
+import TalkerFramework
 
 class FeedbackViewController: UIViewController {
 
+    let networkManager: NetworkManager = NetworkManager()
+    
+    var viewModel: FeedbackViewModel {
+        didSet {
+            if isViewLoaded {
+                reloadViews()
+            }
+        }
+    }
+    
+    
     let ratingView = HCSStarRatingView()
     let feedbackLabel = UILabel()
     let feedbackTextView = UITextView()
+    
+    init(viewModel: FeedbackViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initializeUI()
         layoutUI()
         styleUI()
+        reloadViews()
     }
+    
+
 
     
     private func initializeUI() {
@@ -57,8 +81,19 @@ class FeedbackViewController: UIViewController {
         ratingView.isOpaque = false
     }
     
+    private func reloadViews() {
+        ratingView.value = CGFloat(viewModel.rating)
+        feedbackTextView.text = viewModel.feedbackText
+    }
+    
     @objc private func doneButtonPressed() {
-        dismiss(animated: true, completion: nil)
+        //TODO: fix this
+        viewModel.rating = Int(ratingView.value)
+        viewModel.feedbackText = feedbackTextView.text
+        
+        networkManager.requestCreate(feedback: Feedback(serverId: nil, rating: viewModel.rating, feedbackText: viewModel.feedbackText, talkId: viewModel.talkId)) { [weak self] (_) in
+            self?.dismiss(animated: true, completion: nil)
+        }
     }
     
     @objc private func cancelButtonPressed() {

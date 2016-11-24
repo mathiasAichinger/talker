@@ -125,7 +125,7 @@ class TalkDetailViewController: UIViewController, UITableViewDataSource, UITable
         tableView.deselectRow(at: indexPath, animated: false)
         switch indexPath.row {
         case 2:
-            let feedbackViewController = FeedbackViewController()
+            let feedbackViewController = FeedbackViewController(viewModel: FeedbackViewModel(talkId: viewModel.talk.serverId!))
             navigationController?.show(UINavigationController(rootViewController: feedbackViewController), sender: nil)
         case 3:
             if let githubUrl = viewModel.githubUrl {

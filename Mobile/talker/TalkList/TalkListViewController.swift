@@ -60,7 +60,6 @@ class TalkListViewController: UIViewController, UITableViewDataSource, UITableVi
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(view)
         }
-        
     }
     
     private func styleUI() {
@@ -89,5 +88,4 @@ class TalkListViewController: UIViewController, UITableViewDataSource, UITableVi
         let detailViewController = TalkDetailViewController(viewModel: TalkDetaiViewModel(talk: viewModel.talks[indexPath.row]))
         self.navigationController?.pushViewController(detailViewController, animated: true)
     }
-
 }

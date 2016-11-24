@@ -14,8 +14,10 @@ extension Talk: JSONInitializable {
     public init(json: JSON) {
         serverId = json["serverId"].stringValue
         title = json["title"].stringValue
+        descriptionText = json["descriptionText"].stringValue
         githubUrl = json["githubUrl"].stringValue
         dateTimestamp = json["dateTimestamp"].doubleValue
+        averageRating = json["averageRating"].doubleValue
         speakerId = json["speakerId"].stringValue
         self.loadedSpeaker = nil
     }

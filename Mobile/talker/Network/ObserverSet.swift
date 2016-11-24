@@ -28,7 +28,6 @@ open class ObserverSet<Parameters>: CustomStringConvertible {
         queue.sync(execute: f)
     }
     
-    
     // Main implementation
     
     private var entries: [ObserverSetEntry<Parameters>] = []

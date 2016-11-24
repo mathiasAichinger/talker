@@ -30,11 +30,6 @@ final class SpeakerController: ResourceRepresentable {
         return JSON([:])
     }
     
-    func clear(request: Request) throws -> ResponseRepresentable {
-        try Talk.query().delete()
-        return JSON([])
-    }
-    
     func update(request: Request, speaker: Speaker) throws -> ResponseRepresentable {
         let new = try request.speaker()
         var speaker = speaker
@@ -45,20 +40,13 @@ final class SpeakerController: ResourceRepresentable {
         return speaker
     }
     
-    func replace(request: Request, speaker: Speaker) throws -> ResponseRepresentable {
-        try speaker.delete()
-        return try create(request: request)
-    }
-    
     func makeResource() -> Resource<Speaker> {
         return Resource(
             index: index,
             store: create,
             show: show,
-            replace: replace,
             modify: update,
-            destroy: delete,
-            clear: clear
+            destroy: delete
         )
     }
 }

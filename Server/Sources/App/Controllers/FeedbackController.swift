@@ -18,6 +18,11 @@ final class FeedbackController: ResourceRepresentable {
     func create(request: Request) throws -> ResponseRepresentable {
         var feedback = try request.feedback()
         try feedback.save()
+        
+        if let talkId = feedback.talkId {
+            TalkRatingHelper.recalculateAverageRating(for: talkId)
+        }
+        
         return feedback
     }
     
@@ -26,29 +31,13 @@ final class FeedbackController: ResourceRepresentable {
     }
     
     func delete(request: Request, feedback: Feedback) throws -> ResponseRepresentable {
+        let talkId = feedback.talkId
         try feedback.delete()
-        return JSON([:])
-    }
-    
-    func clear(request: Request) throws -> ResponseRepresentable {
-        try Talk.query().delete()
-        return JSON([])
-    }
-    
-    func update(request: Request, feedback: Feedback) throws -> ResponseRepresentable {
-        let new = try request.feedback()
-        var feedback = feedback
-        feedback.rating = new.rating
-        feedback.feedbackText = new.feedbackText
-        feedback.talkId = new.talkId
+        if let talkId = talkId {
+            TalkRatingHelper.recalculateAverageRating(for: talkId)
+        }
         
-        try feedback.save()
-        return feedback
-    }
-    
-    func replace(request: Request, feedback: Feedback) throws -> ResponseRepresentable {
-        try feedback.delete()
-        return try create(request: request)
+        return JSON([:])
     }
     
     func makeResource() -> Resource<Feedback> {
@@ -56,10 +45,7 @@ final class FeedbackController: ResourceRepresentable {
             index: index,
             store: create,
             show: show,
-            replace: replace,
-            modify: update,
-            destroy: delete,
-            clear: clear
+            destroy: delete
         )
     }
 }

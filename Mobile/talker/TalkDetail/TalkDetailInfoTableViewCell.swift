@@ -42,7 +42,7 @@ class TalkDetailInfoTableViewCell: UITableViewCell {
         titleLabel.text = talk.title
         speakerLabel.text = talk.loadedSpeaker?.speakerName
         dateLabel.text = dateFormatter.string(from:Date(timeIntervalSince1970:talk.dateTimestamp))
-        //ratingView.value = CGFloat(talk)
+        ratingView.value = CGFloat(talk.averageRating)
         
         layoutIfNeeded()
         self.speakerImageView.hnk_setImage(from: URL(string:talk.loadedSpeaker!.speakerImageURL!))
@@ -87,8 +87,6 @@ class TalkDetailInfoTableViewCell: UITableViewCell {
             make.height.equalTo(25)
             make.width.equalTo(75)
         }
-        
-        
     }
     
     private func styleUI() {
@@ -104,6 +102,7 @@ class TalkDetailInfoTableViewCell: UITableViewCell {
         
         ratingView.maximumValue = 5
         ratingView.minimumValue = 0
+        ratingView.allowsHalfStars = true
         ratingView.isUserInteractionEnabled = false
         
         accessoryType = .none

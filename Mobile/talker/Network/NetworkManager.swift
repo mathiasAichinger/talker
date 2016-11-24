@@ -57,4 +57,23 @@ class NetworkManager {
         }
     }
     
+    func requestCreate(feedback: Feedback, completion: @escaping (_ feedback: Feedback) -> Void) {
+        let body = JSON(feedback.dictionaryRepresentation()).rawString()
+        
+        manager.request("http://localhost:8080/feedbacks", method: .post, parameters: nil, encoding: body!).responseJSON {(response) in
+            guard let data = response.data else { return }
+            let json = JSON(data: data)
+            completion(Feedback(json: json))
+        }
+    }
+    
+}
+
+extension String: ParameterEncoding {
+    
+    public func encode(_ urlRequest: URLRequestConvertible, with parameters: Parameters?) throws -> URLRequest {
+        var request = try urlRequest.asURLRequest()
+        request.httpBody = data(using: .utf8, allowLossyConversion: false)
+        return request
+    }
 }

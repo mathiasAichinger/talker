@@ -7,7 +7,7 @@ try drop.addProvider(VaporMongo.Provider.self)
 
 drop.preparations.append(Speaker.self)
 drop.preparations.append(Talk.self)
-
+drop.preparations.append(Feedback.self)
 
 drop.get { req in
     return try drop.view.make("welcome", [
@@ -17,6 +17,6 @@ drop.get { req in
 
 drop.resource("talks", TalkController())
 drop.resource("speakers", SpeakerController())
-drop.resource("feedback", FeedbackController())
+drop.resource("feedbacks", FeedbackController())
 
 drop.run()
