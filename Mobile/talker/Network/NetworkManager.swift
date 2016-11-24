@@ -15,7 +15,7 @@ import TalkerFramework
 class NetworkManager {
     
     let talksDidChange = ObserverSet<[Talk]>()
-    var talks: [Talk] = [] {
+    var talks: [ClientTalk] = [] {
         didSet {
             talksDidChange.notify(talks)
         }
@@ -37,7 +37,7 @@ class NetworkManager {
             guard let data = response.data else { return }
             let json = JSON(data: data)
             for jsonTalk: JSON in json.arrayValue {
-                var talk = Talk(json: jsonTalk)
+                var talk = ClientTalk(json: jsonTalk)
                 if let speakerId = talk.speakerId {
                     self?.requestSpeaker(with: speakerId, completion: { (speaker) in
                         talk.loadedSpeaker = speaker
@@ -49,23 +49,25 @@ class NetworkManager {
         }
     }
     
-    func requestSpeaker(with id: String, completion: @escaping (_ speaker: Speaker) -> Void) {
+    func requestSpeaker(with id: String, completion: @escaping (_ speaker: ClientSpeaker) -> Void) {
         manager.request("http://localhost:8080/speakers/\(id)", method: .get).responseJSON {(response) in
             guard let data = response.data else { return }
             let json = JSON(data: data)
-            completion(Speaker(json: json))
+            completion(ClientSpeaker(json: json))
         }
     }
     
-    func requestCreate(feedback: Feedback, completion: @escaping (_ feedback: Feedback) -> Void) {
-        let body = JSON(feedback.dictionaryRepresentation()).rawString()
+    func requestCreate(feedback: ClientFeedback, completion: @escaping (_ feedback: ClientFeedback) -> Void) {
+        //let body = JSON(feedback.dictionaryRepresentation()).rawString()
         
-        manager.request("http://localhost:8080/feedbacks", method: .post, parameters: nil, encoding: body!).responseJSON {(response) in
+        Alamofire.request("http://localhost:8080/feedbacks", method: .post, parameters: feedback.dictionaryRepresentation(), encoding: JSONEncoding.default).responseJSON {(response) in
             guard let data = response.data else { return }
             let json = JSON(data: data)
-            completion(Feedback(json: json))
+            completion(ClientFeedback(json: json))
         }
     }
+        
+        //manager.request("http://localhost:8080/feedbacks", method: .post, parameters: nil, encoding: body!).    }
     
 }
 

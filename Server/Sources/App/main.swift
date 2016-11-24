@@ -5,9 +5,9 @@ import TalkerFramework
 let drop = Droplet()
 try drop.addProvider(VaporMongo.Provider.self)
 
-drop.preparations.append(Speaker.self)
-drop.preparations.append(Talk.self)
-drop.preparations.append(Feedback.self)
+drop.preparations.append(ServerSpeaker.self)
+drop.preparations.append(ServerTalk.self)
+drop.preparations.append(ServerFeedback.self)
 
 drop.get { req in
     return try drop.view.make("welcome", [

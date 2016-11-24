@@ -10,28 +10,28 @@ import Vapor
 import Fluent
 import TalkerFramework
 
-extension Speaker: Model {
+class ServerSpeaker: Speaker, Model {
     
     public var id: Node? {
-        set {
-            serverId = newValue?.string
-        }
-        get {
-            guard let globalId = serverId else {
-                return nil
-            }
-            return Node.string(globalId)
+        didSet {
+            serverId = id?.string
         }
     }
     
-    public init(node: Node, in context: Context) throws {
-        serverId = try node.extract("serverId")
-        speakerName = try node.extract("speakerName")
-        speakerImageURL = try node.extract("speakerImageURL")
+    public required init(node: Node, in context: Context) throws {
+        let serverId: String? = try node.extract("serverId")
+        id = try node.extract("id")
+        if let serverId = serverId, id == nil {
+            id = Node.string(serverId)
+        }
+        let speakerName: String = try node.extract("speakerName")
+        let speakerImageURL: String? = try node.extract("speakerImageURL")
+        super.init(serverId: serverId, speakerName: speakerName, speakerImageURL: speakerImageURL)
     }
     
     public func makeNode(context: Context) throws -> Node {
         return try Node(node: [
+            "id": id,
             "serverId": serverId,
             "speakerName": speakerName,
             "speakerImageURL": speakerImageURL

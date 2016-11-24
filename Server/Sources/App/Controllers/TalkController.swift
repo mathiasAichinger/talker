@@ -12,7 +12,7 @@ import TalkerFramework
 
 final class TalkController: ResourceRepresentable {
     func index(request: Request) throws -> ResponseRepresentable {
-        return try Talk.all().makeNode().converted(to: JSON.self)
+        return try ServerTalk.all().makeNode().converted(to: JSON.self)
     }
     
     func create(request: Request) throws -> ResponseRepresentable {
@@ -21,16 +21,16 @@ final class TalkController: ResourceRepresentable {
         return talk
     }
     
-    func show(request: Request, talk: Talk) throws -> ResponseRepresentable {
+    func show(request: Request, talk: ServerTalk) throws -> ResponseRepresentable {
         return talk
     }
     
-    func delete(request: Request, talk: Talk) throws -> ResponseRepresentable {
+    func delete(request: Request, talk: ServerTalk) throws -> ResponseRepresentable {
         try talk.delete()
         return JSON([:])
     }
     
-    func update(request: Request, talk: Talk) throws -> ResponseRepresentable {
+    func update(request: Request, talk: ServerTalk) throws -> ResponseRepresentable {
         let new = try request.talk()
         var talk = talk
         talk.title = new.title
@@ -45,7 +45,7 @@ final class TalkController: ResourceRepresentable {
         return talk
     }
     
-    func makeResource() -> Resource<Talk> {
+    func makeResource() -> Resource<ServerTalk> {
         return Resource(
             index: index,
             store: create,
@@ -57,9 +57,9 @@ final class TalkController: ResourceRepresentable {
 }
 
 extension Request {
-    func talk() throws -> Talk {
+    func talk() throws -> ServerTalk {
         guard let json = json else { throw Abort.badRequest }
-        return try Talk(node: json)
+        return try ServerTalk(node: json)
     }
 }
 

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1484"
+               BlueprintIdentifier = "OBJ_1485"
                BuildableName = "Core.framework"
                BlueprintName = "Core"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1520"
+               BlueprintIdentifier = "OBJ_1521"
                BuildableName = "libc.framework"
                BlueprintName = "libc"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_1527"
+               BlueprintIdentifier = "OBJ_1528"
                BuildableName = "CLibreSSL.framework"
                BlueprintName = "CLibreSSL"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -56,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2150"
+               BlueprintIdentifier = "OBJ_2151"
                BuildableName = "BCrypt.framework"
                BlueprintName = "BCrypt"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -70,7 +70,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2169"
+               BlueprintIdentifier = "OBJ_2170"
                BuildableName = "Cipher.framework"
                BlueprintName = "Cipher"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -84,7 +84,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2166"
+               BlueprintIdentifier = "OBJ_2167"
                BuildableName = "Essentials.framework"
                BlueprintName = "Essentials"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -98,7 +98,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2198"
+               BlueprintIdentifier = "OBJ_2199"
                BuildableName = "Hash.framework"
                BlueprintName = "Hash"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -112,7 +112,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2217"
+               BlueprintIdentifier = "OBJ_2218"
                BuildableName = "HMAC.framework"
                BlueprintName = "HMAC"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -126,7 +126,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2168"
+               BlueprintIdentifier = "OBJ_2169"
                BuildableName = "Random.framework"
                BlueprintName = "Random"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -140,7 +140,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2251"
+               BlueprintIdentifier = "OBJ_2252"
                BuildableName = "PathIndexable.framework"
                BlueprintName = "PathIndexable"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -154,7 +154,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2259"
+               BlueprintIdentifier = "OBJ_2260"
                BuildableName = "Polymorphic.framework"
                BlueprintName = "Polymorphic"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -168,7 +168,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2267"
+               BlueprintIdentifier = "OBJ_2268"
                BuildableName = "Node.framework"
                BlueprintName = "Node"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -182,7 +182,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2299"
+               BlueprintIdentifier = "OBJ_2300"
                BuildableName = "Fluent.framework"
                BlueprintName = "Fluent"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -196,7 +196,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2346"
+               BlueprintIdentifier = "OBJ_2347"
                BuildableName = "FluentTester.framework"
                BlueprintName = "FluentTester"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -210,7 +210,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2366"
+               BlueprintIdentifier = "OBJ_2367"
                BuildableName = "Socks.framework"
                BlueprintName = "Socks"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -224,7 +224,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2379"
+               BlueprintIdentifier = "OBJ_2380"
                BuildableName = "SocksCore.framework"
                BlueprintName = "SocksCore"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -238,7 +238,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2400"
+               BlueprintIdentifier = "OBJ_2401"
                BuildableName = "TLS.framework"
                BlueprintName = "TLS"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -252,7 +252,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2423"
+               BlueprintIdentifier = "OBJ_2424"
                BuildableName = "HTTP.framework"
                BlueprintName = "HTTP"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -266,7 +266,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2496"
+               BlueprintIdentifier = "OBJ_2497"
                BuildableName = "SMTP.framework"
                BlueprintName = "SMTP"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -280,7 +280,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2495"
+               BlueprintIdentifier = "OBJ_2496"
                BuildableName = "Transport.framework"
                BlueprintName = "Transport"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -294,7 +294,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2493"
+               BlueprintIdentifier = "OBJ_2494"
                BuildableName = "URI.framework"
                BlueprintName = "URI"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -308,7 +308,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2626"
+               BlueprintIdentifier = "OBJ_2627"
                BuildableName = "WebSockets.framework"
                BlueprintName = "WebSockets"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -322,7 +322,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2676"
+               BlueprintIdentifier = "OBJ_2677"
                BuildableName = "Console.framework"
                BlueprintName = "Console"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -336,7 +336,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2722"
+               BlueprintIdentifier = "OBJ_2723"
                BuildableName = "Jay.framework"
                BlueprintName = "Jay"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -350,7 +350,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2749"
+               BlueprintIdentifier = "OBJ_2750"
                BuildableName = "JSON.framework"
                BlueprintName = "JSON"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -364,7 +364,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2775"
+               BlueprintIdentifier = "OBJ_2776"
                BuildableName = "Turnstile.framework"
                BlueprintName = "Turnstile"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -378,7 +378,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2796"
+               BlueprintIdentifier = "OBJ_2797"
                BuildableName = "TurnstileCrypto.framework"
                BlueprintName = "TurnstileCrypto"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -392,7 +392,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2805"
+               BlueprintIdentifier = "OBJ_2806"
                BuildableName = "TurnstileWeb.framework"
                BlueprintName = "TurnstileWeb"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -406,7 +406,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2823"
+               BlueprintIdentifier = "OBJ_2824"
                BuildableName = "Leaf.framework"
                BlueprintName = "Leaf"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -420,7 +420,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2873"
+               BlueprintIdentifier = "OBJ_2874"
                BuildableName = "HTTPRouting.framework"
                BlueprintName = "HTTPRouting"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -434,7 +434,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2926"
+               BlueprintIdentifier = "OBJ_2927"
                BuildableName = "Routing.framework"
                BlueprintName = "Routing"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -448,7 +448,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_2981"
+               BlueprintIdentifier = "OBJ_2982"
                BuildableName = "TypeSafeRouting.framework"
                BlueprintName = "TypeSafeRouting"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -462,7 +462,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3034"
+               BlueprintIdentifier = "OBJ_3035"
                BuildableName = "Auth.framework"
                BlueprintName = "Auth"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -476,7 +476,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3123"
+               BlueprintIdentifier = "OBJ_3124"
                BuildableName = "Cache.framework"
                BlueprintName = "Cache"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -490,7 +490,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3121"
+               BlueprintIdentifier = "OBJ_3122"
                BuildableName = "Cookies.framework"
                BlueprintName = "Cookies"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -504,7 +504,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3276"
+               BlueprintIdentifier = "OBJ_3277"
                BuildableName = "Sessions.framework"
                BlueprintName = "Sessions"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -518,7 +518,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3354"
+               BlueprintIdentifier = "OBJ_3355"
                BuildableName = "Settings.framework"
                BlueprintName = "Settings"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -532,7 +532,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3434"
+               BlueprintIdentifier = "OBJ_3435"
                BuildableName = "Vapor.framework"
                BlueprintName = "Vapor"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -546,7 +546,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3600"
+               BlueprintIdentifier = "OBJ_3601"
                BuildableName = "BSON.framework"
                BlueprintName = "BSON"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -560,7 +560,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3626"
+               BlueprintIdentifier = "OBJ_3627"
                BuildableName = "MongoCryptoEssentials.framework"
                BlueprintName = "MongoCryptoEssentials"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -574,7 +574,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3660"
+               BlueprintIdentifier = "OBJ_3661"
                BuildableName = "MongoHMAC.framework"
                BlueprintName = "MongoHMAC"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -588,7 +588,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3675"
+               BlueprintIdentifier = "OBJ_3676"
                BuildableName = "MongoKitten.framework"
                BlueprintName = "MongoKitten"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -602,7 +602,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3709"
+               BlueprintIdentifier = "OBJ_3710"
                BuildableName = "MongoMD5.framework"
                BlueprintName = "MongoMD5"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -616,7 +616,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3712"
+               BlueprintIdentifier = "OBJ_3713"
                BuildableName = "MongoPBKDF2.framework"
                BlueprintName = "MongoPBKDF2"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -630,7 +630,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3714"
+               BlueprintIdentifier = "OBJ_3715"
                BuildableName = "MongoSCRAM.framework"
                BlueprintName = "MongoSCRAM"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -644,7 +644,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3716"
+               BlueprintIdentifier = "OBJ_3717"
                BuildableName = "MongoSHA1.framework"
                BlueprintName = "MongoSHA1"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -658,7 +658,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3779"
+               BlueprintIdentifier = "OBJ_3780"
                BuildableName = "FluentMongo.framework"
                BlueprintName = "FluentMongo"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -672,7 +672,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3821"
+               BlueprintIdentifier = "OBJ_3822"
                BuildableName = "VaporMongo.framework"
                BlueprintName = "VaporMongo"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -686,7 +686,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3922"
+               BlueprintIdentifier = "OBJ_3923"
                BuildableName = "TalkerFramework.framework"
                BlueprintName = "TalkerFramework"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -700,7 +700,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_3931"
+               BlueprintIdentifier = "OBJ_3932"
                BuildableName = "App"
                BlueprintName = "App"
                ReferencedContainer = "container:talker-server.xcodeproj">
@@ -731,7 +731,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_1484"
+            BlueprintIdentifier = "OBJ_1485"
             BuildableName = "Core.framework"
             BlueprintName = "Core"
             ReferencedContainer = "container:talker-server.xcodeproj">

@@ -91,7 +91,7 @@ class FeedbackViewController: UIViewController {
         viewModel.rating = Int(ratingView.value)
         viewModel.feedbackText = feedbackTextView.text
         
-        networkManager.requestCreate(feedback: Feedback(serverId: nil, rating: viewModel.rating, feedbackText: viewModel.feedbackText, talkId: viewModel.talkId)) { [weak self] (_) in
+        networkManager.requestCreate(feedback: ClientFeedback(serverId: nil, rating: viewModel.rating, feedbackText: viewModel.feedbackText, talkId: viewModel.talkId)) { [weak self] (_) in
             self?.dismiss(animated: true, completion: nil)
         }
     }

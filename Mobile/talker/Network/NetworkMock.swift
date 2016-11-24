@@ -32,10 +32,10 @@ private func mockNetwork() {
     
     router.get("speakers/:id") { (request) -> Serializable? in
         if request.components["id"] == "1" {
-            let speaker = Speaker(serverId: "1", speakerName: "Wolfgang Damm", speakerImageURL: "https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/1934302_10156332630305464_7939098691828784373_n.jpg?oh=dc6a4e63a26bb3d028a6f242ef083fda&oe=58D590FA")
+            let speaker = ClientSpeaker(serverId: "1", speakerName: "Wolfgang Damm", speakerImageURL: "https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/1934302_10156332630305464_7939098691828784373_n.jpg?oh=dc6a4e63a26bb3d028a6f242ef083fda&oe=58D590FA")
             return speaker
         } else {
-            let speaker = Speaker(serverId: "2", speakerName: "Mathias Aichinger", speakerImageURL: "https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/385645_3986911081616_2073176969_n.jpg?oh=8432a9e0bafa92c069baecdb221e0a3a&oe=58C9FE47")
+            let speaker = ClientSpeaker(serverId: "2", speakerName: "Mathias Aichinger", speakerImageURL: "https://scontent-bru2-1.xx.fbcdn.net/v/t1.0-9/385645_3986911081616_2073176969_n.jpg?oh=8432a9e0bafa92c069baecdb221e0a3a&oe=58C9FE47")
             return speaker
         }
     }

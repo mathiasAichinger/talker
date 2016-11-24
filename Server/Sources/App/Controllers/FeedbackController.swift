@@ -12,7 +12,7 @@ import TalkerFramework
 
 final class FeedbackController: ResourceRepresentable {
     func index(request: Request) throws -> ResponseRepresentable {
-        return try Feedback.all().makeNode().converted(to: JSON.self)
+        return try ServerFeedback.all().makeNode().converted(to: JSON.self)
     }
     
     func create(request: Request) throws -> ResponseRepresentable {
@@ -26,11 +26,11 @@ final class FeedbackController: ResourceRepresentable {
         return feedback
     }
     
-    func show(request: Request, feedback: Feedback) throws -> ResponseRepresentable {
+    func show(request: Request, feedback: ServerFeedback) throws -> ResponseRepresentable {
         return feedback
     }
     
-    func delete(request: Request, feedback: Feedback) throws -> ResponseRepresentable {
+    func delete(request: Request, feedback: ServerFeedback) throws -> ResponseRepresentable {
         let talkId = feedback.talkId
         try feedback.delete()
         if let talkId = talkId {
@@ -40,7 +40,7 @@ final class FeedbackController: ResourceRepresentable {
         return JSON([:])
     }
     
-    func makeResource() -> Resource<Feedback> {
+    func makeResource() -> Resource<ServerFeedback> {
         return Resource(
             index: index,
             store: create,
@@ -51,8 +51,8 @@ final class FeedbackController: ResourceRepresentable {
 }
 
 extension Request {
-    func feedback() throws -> Feedback {
+    func feedback() throws -> ServerFeedback {
         guard let json = json else { throw Abort.badRequest }
-        return try Feedback(node: json)
+        return try ServerFeedback(node: json)
     }
 }
