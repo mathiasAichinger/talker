@@ -14,11 +14,11 @@ class TalkRatingHelper {
     
     class func recalculateAverageRating(for talkId: String) {
         do {
+            let feedbacks: [ServerFeedback] = try ServerFeedback.query().filter("talkId", talkId).all()
             guard var talk = try ServerTalk.find(talkId) else {
                 return
             }
             
-            let feedbacks: [ServerFeedback] = try ServerFeedback.query().filter("talkId", talkId).all()
             if feedbacks.count > 0 {
                 let sumRating: Int = feedbacks.reduce(0, { $0 + $1.rating })
                 talk.averageRating = Double(sumRating)/Double(feedbacks.count)

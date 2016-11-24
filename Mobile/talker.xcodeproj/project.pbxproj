@@ -27,8 +27,6 @@
 		21EEE5481DDF85E700A2A34C /* TalkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5471DDF85E700A2A34C /* TalkListViewController.swift */; };
 		21EEE54A1DDF85FB00A2A34C /* TalkListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE5491DDF85FB00A2A34C /* TalkListViewModel.swift */; };
 		21EEE54C1DDF865C00A2A34C /* TalkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EEE54B1DDF865C00A2A34C /* TalkTableViewCell.swift */; };
-		21EEE5521DDF90F400A2A34C /* profile_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EEE5511DDF90F400A2A34C /* profile_small.png */; };
-		21EEE5541DDF956500A2A34C /* wolfgang_damm.png in Resources */ = {isa = PBXBuildFile; fileRef = 21EEE5531DDF956500A2A34C /* wolfgang_damm.png */; };
 		2B5E167CF9A79DC4A2F9C367 /* Pods_talker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35CAD6983AED03C35E80A474 /* Pods_talker.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +53,6 @@
 		21EEE5471DDF85E700A2A34C /* TalkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewController.swift; sourceTree = "<group>"; };
 		21EEE5491DDF85FB00A2A34C /* TalkListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkListViewModel.swift; sourceTree = "<group>"; };
 		21EEE54B1DDF865C00A2A34C /* TalkTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TalkTableViewCell.swift; sourceTree = "<group>"; };
-		21EEE5511DDF90F400A2A34C /* profile_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_small.png; sourceTree = "<group>"; };
-		21EEE5531DDF956500A2A34C /* wolfgang_damm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wolfgang_damm.png; sourceTree = "<group>"; };
 		35CAD6983AED03C35E80A474 /* Pods_talker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_talker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		558342BB70A4A0BA51E2770C /* Pods-talker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-talker.release.xcconfig"; path = "Pods/Target Support Files/Pods-talker/Pods-talker.release.xcconfig"; sourceTree = "<group>"; };
 		77998D13B946771B155B6E35 /* Pods-talker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-talker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-talker/Pods-talker.debug.xcconfig"; sourceTree = "<group>"; };
@@ -162,8 +158,6 @@
 		21EEE5461DDF85D800A2A34C /* TalkList */ = {
 			isa = PBXGroup;
 			children = (
-				21EEE5531DDF956500A2A34C /* wolfgang_damm.png */,
-				21EEE5511DDF90F400A2A34C /* profile_small.png */,
 				21EEE5471DDF85E700A2A34C /* TalkListViewController.swift */,
 				21EEE5491DDF85FB00A2A34C /* TalkListViewModel.swift */,
 				21EEE54B1DDF865C00A2A34C /* TalkTableViewCell.swift */,
@@ -253,8 +247,6 @@
 			files = (
 				21EEE3911DDF7BC500A2A34C /* LaunchScreen.storyboard in Resources */,
 				21EEE38E1DDF7BC500A2A34C /* Assets.xcassets in Resources */,
-				21EEE5521DDF90F400A2A34C /* profile_small.png in Resources */,
-				21EEE5541DDF956500A2A34C /* wolfgang_damm.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

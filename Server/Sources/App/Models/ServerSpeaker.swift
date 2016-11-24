@@ -21,9 +21,6 @@ class ServerSpeaker: Speaker, Model {
     public required init(node: Node, in context: Context) throws {
         let serverId: String? = try node.extract("serverId")
         id = try node.extract("id")
-        if let serverId = serverId, id == nil {
-            id = Node.string(serverId)
-        }
         let speakerName: String = try node.extract("speakerName")
         let speakerImageURL: String? = try node.extract("speakerImageURL")
         super.init(serverId: serverId, speakerName: speakerName, speakerImageURL: speakerImageURL)

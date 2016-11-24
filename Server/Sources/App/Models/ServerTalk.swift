@@ -21,16 +21,12 @@ class ServerTalk: Talk, Model {
     public required init(node: Node, in context: Context) throws {
         let serverId: String? = try node.extract("serverId")
         id = try node.extract("id")
-        if let serverId = serverId, id == nil {
-            id = Node.string(serverId)
-        }
         let title: String = try node.extract("title")
         let descriptionText: String = try node.extract("descriptionText")
         let averageRating: Double = try node.extract("averageRating")
         let githubUrl: String? = try node.extract("githubUrl")
         let dateTimestamp: Double = try node.extract("dateTimestamp")
         let speakerId: String? = try node.extract("speakerId")
-        let loadedSpeaker: Speaker? = nil
         super.init(serverId: serverId, title: title, descriptionText: descriptionText, githubUrl: githubUrl, dateTimestamp: dateTimestamp, averageRating: averageRating, speakerId: speakerId)
         
     }

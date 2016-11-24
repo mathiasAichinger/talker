@@ -22,7 +22,6 @@ class FeedbackViewController: UIViewController {
         }
     }
     
-    
     let ratingView = HCSStarRatingView()
     let feedbackLabel = UILabel()
     let feedbackTextView = UITextView()
@@ -43,9 +42,6 @@ class FeedbackViewController: UIViewController {
         styleUI()
         reloadViews()
     }
-    
-
-
     
     private func initializeUI() {
         view.addSubview(ratingView)
@@ -99,6 +95,4 @@ class FeedbackViewController: UIViewController {
     @objc private func cancelButtonPressed() {
         dismiss(animated: true, completion: nil)
     }
-    
-
 }

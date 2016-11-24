@@ -21,9 +21,6 @@ class ServerFeedback: Feedback, Model {
     public required init(node: Node, in context: Context) throws {
         let serverId: String? = try node.extract("serverId")
         id = try node.extract("id")
-        if let serverId = serverId, id == nil {
-            id = Node.string(serverId)
-        }
         let rating: Int = try node.extract("rating")
         let feedbackText: String = try node.extract("feedbackText")
         let talkId: String? = try node.extract("talkId")
@@ -34,7 +31,7 @@ class ServerFeedback: Feedback, Model {
         return try Node(node: [
             "id": id,
             "serverId": serverId,
-            "rating": rating,
+            "rating": String(rating),
             "feedbackText": feedbackText,
             "talkId": talkId
             ])
